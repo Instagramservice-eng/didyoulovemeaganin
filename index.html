@@ -11,31 +11,36 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="do_you_love_me.css" />
+
   <title>Do you love me?</title>
 </head>
 <body>
 
   <div class="question-container container">
-    <video
-      <div class="result-container container">
-  <iframe
-    class="yt-video"
-    src="https://www.youtube.com/embed/PRGs-SgRDQc?autoplay=1&mute=1"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen>
-  </iframe>
 
-  <h2>I knew it 😍!</h2>
-  </div>
-    </video>
+    <!-- Result (hidden by default) -->
+    <div class="result-container container">
+      <iframe
+        id="ytVideo"
+        class="yt-video"
+        src="https://www.youtube.com/embed/PRGs-SgRDQc?autoplay=1&mute=1&loop=1&playlist=PRGs-SgRDQc"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+      </iframe>
 
+      <h2>I knew it 😍</h2>
+    </div>
+
+    <!-- Question -->
     <h2 class="question">Do you love me?</h2>
 
+    <!-- Buttons -->
     <div class="button-container">
       <button class="yes-btn btn js-yes-btn">Yes</button>
       <button class="no-btn btn js-no-btn">No</button>
     </div>
+
   </div>
 
   <!-- JS -->
